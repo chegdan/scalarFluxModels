@@ -28,14 +28,14 @@ gradSchemes
 divSchemes
 {
     default         none;
-    div(phi,T)      Gauss limitedLinear 1;
+    div(phi,C)      Gauss limitedLinear 1;
 }
 
 laplacianSchemes
 {
     default         none;
-    laplacian(DT,T) Gauss linear corrected;
-    laplacian(DEff,T) Gauss linear corrected;
+//    laplacian(DT,T) Gauss linear corrected;
+    laplacian(DEff,C) Gauss linear corrected;
 }
 
 interpolationSchemes
@@ -51,7 +51,7 @@ snGradSchemes
 fluxRequired
 {
     default         no;
-    T               ;
+    C               ;
 }
 
 

@@ -1,10 +1,10 @@
-    Info<< "Reading field T\n" << endl;
+    Info<< "Reading field C\n" << endl;
 
-    volScalarField T
+    volScalarField C
     (
         IOobject
         (
-            "T",
+            "C",
             runTime.timeName(),
             mesh,
             IOobject::MUST_READ,
@@ -34,7 +34,7 @@
 
     autoPtr<incompressible::RASSFModel> turbulence
     (
-        incompressible::RASSFModel::New(U, phi, T)
+        incompressible::RASSFModel::New(U, phi, C)
     );
 
 

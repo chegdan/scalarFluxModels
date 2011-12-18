@@ -61,9 +61,9 @@ int main(int argc, char *argv[])
         {
             solve
             (
-                fvm::ddt(T)
-              + fvm::div(phi, T)
-              + turbulence->divDFlux(T)
+                fvm::ddt(C)
+              + fvm::div(phi, C)
+              + turbulence->divDFlux(C)
             );
         }
 
