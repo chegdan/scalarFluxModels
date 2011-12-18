@@ -1,0 +1,12 @@
+EXE_INC = \
+    -I$(LIB_SRC)/turbulenceModels \
+    -I$(LIB_SRC)/scalarFluxModels \
+    -I$(LIB_SRC)/transportModels \
+    -I$(LIB_SRC)/finiteVolume/lnInclude \
+    -I$(LIB_SRC)/meshTools/lnInclude
+
+LIB_USER_LIBS = \
+    -lincompressibleTurbulenceModel \
+    -lincompressibleScalarFluxModel \
+    -lfiniteVolume \
+    -lmeshTools

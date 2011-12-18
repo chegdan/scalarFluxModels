@@ -1,0 +1,4 @@
+scalarFluxModel.C
+laminarFlux/laminarFlux.C
+
+LIB = $(FOAM_LIBBIN)/libincompressibleScalarFluxModel

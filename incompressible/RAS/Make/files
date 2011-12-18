@@ -1,0 +1,7 @@
+RASSFModel/RASSFModel.C
+
+laminarFlux/laminarFlux.C
+gradientDiffusionHypothesis/gradientDiffusionHypothesis.C
+LaunderSFTM/LaunderSFTM.C
+
+LIB = $(FOAM_LIBBIN)/libincompressibleRASSFModels
