@@ -96,6 +96,8 @@ gradientDiffusionHypothesis::gradientDiffusionHypothesis
 
     Dt_.correctBoundaryConditions();
 
+    Info<<"Writing initial value of turbulent diffusivity to startTime"<< endl;
+
     Dt_.write();//write the initial value of Dt
     
     printCoeffs();
