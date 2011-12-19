@@ -48,7 +48,10 @@ int main(int argc, char *argv[])
 
     Info<< "\nCalculating scalar transport\n" << endl;
 
-    #include "CourantNo.H"
+#       include "readTimeControls.H"
+#       include "CourantNo.H"
+#       include "setDeltaT.H"
+
 
     while (simple.loop())
     {
