@@ -1,0 +1,14 @@
+#!/bin/sh
+cd ${0%/*} || exit 1    # run from this directory
+set -x
+
+cd incompressible
+	./Allwmake
+cd ..
+
+cd scalarFluxFoam/scalarFluxFoam
+	wmake
+cd ..
+
+
+# ----------------------------------------------------------------- end-of-file
