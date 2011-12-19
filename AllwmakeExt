@@ -3,17 +3,12 @@ cd ${0%/*} || exit 1    # run from this directory
 set -x
 
 cd incompressible
-	./Allwclean
+	./Allwmake
 cd ..
 
-cd scalarFluxFoam/scalarFluxFoam
-	wclean
-cd ../..
-
 cd scalarFluxFoam/scalarFluxFoam-ext
-	wclean
-cd ../..
-
+	wmake
+cd ..
 
 
 # ----------------------------------------------------------------- end-of-file

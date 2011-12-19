@@ -25,12 +25,12 @@ Application
     scalarTransportFoam
 
 Description
-    Solves a transport equation for a passive scalar
+    Solves a transport equation for a passive scalar in laminar and turbulent flow
+    Compatable with OpenFOAM-ext
 
 \*---------------------------------------------------------------------------*/
 
 #include "fvCFD.H"
-#include "simpleControl.H"
 #include "RASSFModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
@@ -42,7 +42,6 @@ int main(int argc, char *argv[])
     #include "createMesh.H"
     #include "createFields.H"
 
-    simpleControl simple(mesh);
 
     // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -53,9 +52,11 @@ int main(int argc, char *argv[])
 #       include "setDeltaT.H"
 
 
-    while (simple.loop())
+    while (runTime.loop())
     {
         Info<< "Time = " << runTime.timeName() << nl << endl;
+
+#       include "readSIMPLEControls.H"
 
         for (int nonOrth=0; nonOrth<=simple.nNonOrthCorr(); nonOrth++)
         {
