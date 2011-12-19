@@ -1,3 +1,0 @@
-Making dependency list for source file laminarFlux/laminarFlux.C
-SOURCE=laminarFlux/laminarFlux.C ;  g++ -m64 -Dlinux64 -DWM_DP -Wall -Wextra -Wno-unused-parameter -Wold-style-cast -Wnon-virtual-dtor -O3  -DNoRepository -ftemplate-depth-100 -I/home/dcombest/OpenFOAM/OpenFOAM-2.0.x/src/finiteVolume/lnInclude -I/home/dcombest/OpenFOAM/OpenFOAM-2.0.x/src/turbulenceModels -I/home/dcombest/OpenFOAM/OpenFOAM-2.0.x/src/transportModels -IlnInclude -I. -I/home/dcombest/OpenFOAM/OpenFOAM-2.0.x/src/OpenFOAM/lnInclude -I/home/dcombest/OpenFOAM/OpenFOAM-2.0.x/src/OSspecific/POSIX/lnInclude   -fPIC -c $SOURCE -o Make/linux64GccDPOpt/laminarFlux.o
-'/home/dcombest/OpenFOAM/dcombest-2.0.x/platforms/linux64GccDPOpt/lib/libincompressibleScalarFluxModel.so' is up to date.

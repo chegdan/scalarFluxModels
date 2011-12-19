@@ -95,6 +95,8 @@ gradientDiffusionHypothesis::gradientDiffusionHypothesis
     Dt_ = nut_/Sct_;//turbulent diffusivity
 
     Dt_.correctBoundaryConditions();
+
+    Dt_.write();//write the initial value of Dt
     
     printCoeffs();
 
@@ -180,9 +182,12 @@ void gradientDiffusionHypothesis::correct()
         return;
     }
 
+    if (activeScalar_)
+    {
     //recalculate the turbulent diffusivity
     Dt_ = nut_/Sct_;
     Dt_.correctBoundaryConditions();
+    }
 
 }
 

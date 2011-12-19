@@ -20,6 +20,8 @@ turbulence      off;
 
 printCoeffs     off;
 
+activeScalar	off;
+
 laminarFluxCoeffs
 {
 }

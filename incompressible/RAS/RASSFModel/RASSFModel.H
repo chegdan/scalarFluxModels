@@ -80,6 +80,9 @@ protected:
         //- Turbulence on/off flag
         Switch turbulence_;
 
+        //- Flag to recalculate model parameters if an active scalar
+        Switch activeScalar_;
+
         //- Flag to print the model coeffs at run-time
         Switch printCoeffs_;
 

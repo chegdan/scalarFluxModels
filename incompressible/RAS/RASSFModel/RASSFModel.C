@@ -77,6 +77,7 @@ RASSFModel::RASSFModel
     ),
 
     turbulence_(lookup("turbulence")),
+    activeScalar_(lookup("activeScalar")),
     printCoeffs_(lookupOrDefault<Switch>("printCoeffs", false)),
     coeffDict_(subOrEmptyDict(type + "Coeffs"))
 

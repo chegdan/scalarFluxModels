@@ -18,6 +18,8 @@ RASSFModel	gradientDiffusionHypothesis;
 
 turbulence      on;
 
+activeScalar	on;
+
 printCoeffs     on;
 
 laminarFluxCoeffs
