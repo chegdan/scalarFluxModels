@@ -10,10 +10,5 @@ cd scalarFluxFoam/scalarFluxFoam
 	wclean
 cd ../..
 
-cd scalarFluxFoam/scalarFluxFoam-ext
-	wclean
-cd ../..
-
-
 
 # ----------------------------------------------------------------- end-of-file
